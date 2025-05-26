@@ -16,7 +16,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     <div>
       <TypewriterMultiText
         lines={[
-          { type: 'text', text: `> ${t('loadingProfile')}`, speed: 50, className: '' },
+          { type: 'text', text: `> ${t('loadingProfile')}`, speed: 30, className: '' },
           { type: 'text', text: `▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮`, speed: 50, className: '', hideBlink: true },
           {
             type: 'component',
@@ -34,8 +34,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                   </div>
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h2 className="mb-4">{t('welcomeMessage')}</h2>
-                  <ul className="flex flex-col items-start gap-2">
+                  <h2 className="mb-4 text-xl">{t('welcomeMessage')}</h2>
+                  <ul className="flex w-full flex-col items-start gap-2">
                     <li>
                       <span className="mr-2 text-cyan-400">{t('name')}:</span>
                       <span className="text-foreground">{t('nameValue')}</span>
@@ -57,7 +57,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               </span>
             ),
           },
-          { type: 'text', text: '> waiting for input . . .', speed: 50, className: '' },
+          { type: 'text', text: '> waiting for input . . .', speed: 30, className: '' },
         ]}
         lineDelay={1000}
       />
