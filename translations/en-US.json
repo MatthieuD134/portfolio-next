@@ -10,7 +10,16 @@
     "contact": "Contact"
   },
   "HomePage": {
-    "title": "Welcome to my Portfolio"
+    "loadingProfile": "Loading freelancer profile . . .",
+    "welcomeMessage": "Welcome to my Portfolio",
+    "name": "Name",
+    "nameValue": "Matthieu Daulhiac",
+    "stack": "Stack",
+    "stackValue": "Full Stack Engineer - React, NextJS, NodeJS, NestJS",
+    "location": "Location",
+    "locationValue": "Shanghai - Available for remote projects",
+    "status": "Status",
+    "statusValue": "Available for freelance projects & collaborations"
   },
   "Metadata": {
     "title": "Matthieu Daulhiac | Full Stack Engineer",

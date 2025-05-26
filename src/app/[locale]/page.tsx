@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
+import { TypewriterMultiText } from '@/components/typewriter-multi-text';
+
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
@@ -9,7 +11,17 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
   const t = await getTranslations({ locale, namespace: 'HomePage' });
 
-  return <div>{t('title')}</div>;
+  return (
+    <div>
+      <TypewriterMultiText
+        lines={[
+          { text: `> ${t('loadingProfile')}`, speed: 50, className: '' },
+          { text: `> ${t('welcomeMessage')}`, speed: 50, className: '' },
+        ]}
+        lineDelay={1000}
+      />
+    </div>
+  );
 }
 
 export async function generateMetadata({

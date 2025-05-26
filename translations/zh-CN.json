@@ -10,7 +10,16 @@
     "contact": "联系"
   },
   "HomePage": {
-    "title": "欢迎来到我的作品集"
+    "loadingProfile": "加载自由职业者资料 . . .",
+    "welcomeMessage": "欢迎来到我的作品集",
+    "name": "姓名",
+    "nameValue": "马修 - Matthieu Daulhiac",
+    "stack": "技术栈",
+    "stackValue": "全栈工程师 - React、NextJS、NodeJS、NestJS",
+    "location": "位置",
+    "locationValue": "上海 - 可远程工作",
+    "status": "状态",
+    "statusValue": "可接受自由职业项目和合作"
   },
   "Metadata": {
     "title": "马修 - Matthieu Daulhiac | 全段开发工程师",

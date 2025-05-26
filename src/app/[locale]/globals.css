@@ -132,3 +132,14 @@ body::after, html::after {
     pointer-events: none;
     background: repeating-linear-gradient(to bottom, rgb(0 204 255 / 3%) 0, rgb(0 204 255 / 3%) 2px, transparent 5px, transparent 6px)
 }
+
+@layer utilities {
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0; }
+  }
+
+  .animate-blink {
+    animation: blink .75s step-start infinite;
+  }
+}
