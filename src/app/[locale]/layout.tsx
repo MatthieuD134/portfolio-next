@@ -49,7 +49,7 @@ export default async function LocaleLayout({
           <div className="grid min-h-svh place-items-center p-2 md:p-8">
             <div className="flex h-full w-full flex-col items-center justify-center">
               <Header params={routeParams} />
-              <main className="border-foreground h-full w-full max-w-[1200px] border-2 border-t-0 p-2 font-sans">
+              <main className="border-foreground h-full w-full max-w-[1200px] overflow-scroll border-2 border-t-0 p-2 font-sans">
                 {children}
               </main>
               <Footer params={routeParams} />

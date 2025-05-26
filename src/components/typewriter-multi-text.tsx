@@ -6,65 +6,103 @@ import { useTypewriter } from '@/hooks/use-typewriter';
 
 import { cn } from '../lib/utils';
 
-type LineConfig = {
-  /** The text to type */
+type TextLine = {
+  type: 'text';
   text: string;
-  /** Milliseconds per character (overrides default) */
   speed?: number;
-  /** Any additional CSS classes for styling */
   className?: string;
+  hideBlink?: boolean;
 };
+
+type ComponentLine = {
+  type: 'component';
+  content: React.ReactNode;
+  className?: string;
+  /** Optional delay (ms) before moving to next line automatically */
+  displayDuration?: number;
+};
+
+type LineConfig = TextLine | ComponentLine;
 
 interface MultiTypewriterProps {
   className?: string;
-  /** Array of lines to type out, in order */
   lines: LineConfig[];
-  /** Delay (ms) between lines once one finishes */
   lineDelay?: number;
+  finishedCallback?: () => void;
 }
 
-export function TypewriterMultiText({ className, lines, lineDelay = 500 }: MultiTypewriterProps) {
+export function TypewriterMultiText({
+  className,
+  lines,
+  lineDelay = 500,
+  finishedCallback,
+}: MultiTypewriterProps) {
   const [currentLine, setCurrentLine] = useState(0);
   const [started, setStarted] = useState(false);
+  const current = lines[currentLine];
 
-  // Tracks the text typed for the current line
-  const { text: fullText, speed: defaultSpeed } = {
-    text: lines[currentLine].text,
-    speed: lines[currentLine].speed ?? 80,
-  };
-  const typed = useTypewriter(fullText, defaultSpeed, started);
+  // Safe: always call the hook
+  const typed = useTypewriter(
+    current.type === 'text' ? current.text : '',
+    current.type === 'text' ? (current.speed ?? 80) : 0,
+    started && current.type === 'text',
+  );
 
-  // Once the current line is fully typed, wait then advance
   useEffect(() => {
     if (!started) return;
 
-    if (typed === fullText) {
+    if (current.type === 'text' && typed === current.text) {
       const timeout = setTimeout(() => {
-        if (currentLine < lines.length - 1) {
-          setCurrentLine((i) => i + 1);
-          setStarted(false);
-        }
+        nextLine();
       }, lineDelay);
       return () => clearTimeout(timeout);
     }
-  }, [typed, fullText, currentLine, lines.length, lineDelay, started]);
 
-  // Whenever we move to a new line, restart typing
+    if (current.type === 'component') {
+      const duration = current.displayDuration ?? lineDelay;
+
+      const timeout = setTimeout(() => {
+        nextLine();
+      }, duration);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [typed, started, current, lineDelay]);
+
   useEffect(() => {
     setStarted(true);
   }, [currentLine]);
 
+  const nextLine = () => {
+    if (currentLine < lines.length - 1) {
+      setCurrentLine((i) => i + 1);
+      setStarted(false);
+    } else {
+      finishedCallback?.();
+    }
+  };
+
   return (
     <div className={cn('leading-relaxed text-cyan-400', className)}>
+      {/* Render already completed lines */}
       {lines.slice(0, currentLine).map((line, i) => (
         <div key={i} className={line.className}>
-          {line.text}
+          {line.type === 'text' ? line.text : line.content}
         </div>
       ))}
 
-      <div className={lines[currentLine].className}>
-        <span>{typed}</span>
-        <span className="w-0.6ch animate-blink inline-block bg-current">&nbsp;</span>
+      {/* Render current line */}
+      <div className={current.className}>
+        {current.type === 'text' ? (
+          <>
+            <span>{typed}</span>
+            {!current.hideBlink && (
+              <span className={`animate-blink inline-block w-[0.6ch] bg-current`}>&nbsp;</span>
+            )}
+          </>
+        ) : (
+          current.content
+        )}
       </div>
     </div>
   );
