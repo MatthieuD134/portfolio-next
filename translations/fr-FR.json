@@ -1,0 +1,13 @@
+{
+  "Metadata": {
+    "title": "Matthieu Daulhiac | Ingenieur Full Stack",
+    "description": "Je suis Matthieu Daulhiac, un ingénieur Full Stack avec une expertise en React, Node.js et technologies cloud. Explorez mes projets et compétences.",
+    "applicationName": "Portfolio de Matthieu Daulhiac",
+    "authorName": "Matthieu Daulhiac",
+    "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
+    "keywords": "Matthieu Daulhiac;Ingenieur Full Stack;Developpeur Web Freelance;React;NextJS;NodeJS;Portfolio"
+  },
+  "LandingPage": {
+    "welcome": "Bienvenue dans notre application !"
+  }
+}

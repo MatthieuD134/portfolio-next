@@ -1,0 +1,13 @@
+{
+  "Metadata": {
+    "title": "马修 - Matthieu Daulhiac | 全段开发工程师",
+    "description": "我叫马修（Matthieu Daulhiac），是一名全栈工程师，擅长 React、Node.js 和云技术。探索我的项目和技能。",
+    "applicationName": "Matthieu Daulhiac的作品集",
+    "authorName": "Matthieu Daulhiac",
+    "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
+    "keywords": "Matthieu Daulhiac;全栈工程师;自由职业网页开发者;React;NextJS;NodeJS;作品集"
+  },
+  "LandingPage": {
+    "welcome": "欢迎来到我们的应用程序！"
+  }
+}
