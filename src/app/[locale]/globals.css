@@ -50,7 +50,7 @@
   --card-foreground: oklch(95% 0 0deg);
   --popover: oklch(12% 0.015 250deg);
   --popover-foreground: oklch(95% 0 0deg);
-  --primary: oklch(70% 0.25 55deg); /* Bright neon orange */
+  --primary: oklch(83% 0.17 81.5deg); /* Bright neon orange */
   --primary-foreground: oklch(10% 0.02 250deg); /* Dark bg contrast */
   --secondary: oklch(20% 0.05 230deg); /* Muted steel blue */
   --secondary-foreground: oklch(90% 0 0deg); /* Light text */
@@ -122,4 +122,13 @@
     /* stylelint-disable-next-line at-rule-no-deprecated */
     @apply bg-background text-foreground;
   }
+}
+
+body::after, html::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: repeating-linear-gradient(to bottom, rgb(0 204 255 / 3%) 0, rgb(0 204 255 / 3%) 2px, transparent 5px, transparent 6px)
 }

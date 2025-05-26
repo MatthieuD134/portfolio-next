@@ -2,7 +2,6 @@
 
 import { LocalesEnum, localesEnum } from '../const';
 import { Button } from './ui/button';
-import { Separator } from './ui/separator';
 
 const LanguageSwitcher = () => {
   const changeLanguage = (locale: LocalesEnum) => {
@@ -15,17 +14,9 @@ const LanguageSwitcher = () => {
 
   return (
     <div className="z-10 flex items-center gap-2">
-      <Button variant="ghost" onClick={() => changeLanguage(localesEnum.en)}>
-        English
-      </Button>
-      <Separator className="h-5 bg-white" orientation="vertical" />
-      <Button variant="ghost" onClick={() => changeLanguage(localesEnum.fr)}>
-        Français
-      </Button>
-      <Separator className="h-5 bg-white" orientation="vertical" />
-      <Button variant="ghost" onClick={() => changeLanguage(localesEnum.zh)}>
-        中文
-      </Button>
+      <Button onClick={() => changeLanguage(localesEnum.en)}>English</Button>
+      <Button onClick={() => changeLanguage(localesEnum.fr)}>Français</Button>
+      <Button onClick={() => changeLanguage(localesEnum.zh)}>中文</Button>
     </div>
   );
 };

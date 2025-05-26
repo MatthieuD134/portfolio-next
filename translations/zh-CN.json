@@ -1,4 +1,17 @@
 {
+  "NotFound": {
+    "notFound": "页面未找到"
+  },
+  "Header": {
+    "title": "马修 - Matthieu Daulhiac | 全栈开发工程师",
+    "home": "首页",
+    "about": "关于我",
+    "projects": "项目",
+    "contact": "联系"
+  },
+  "HomePage": {
+    "title": "欢迎来到我的作品集"
+  },
   "Metadata": {
     "title": "马修 - Matthieu Daulhiac | 全段开发工程师",
     "description": "我叫马修（Matthieu Daulhiac），是一名全栈工程师，擅长 React、Node.js 和云技术。探索我的项目和技能。",
@@ -7,7 +20,37 @@
     "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
     "keywords": "Matthieu Daulhiac;全栈工程师;自由职业网页开发者;React;NextJS;NodeJS;作品集"
   },
-  "LandingPage": {
-    "welcome": "欢迎来到我们的应用程序！"
+  "AboutPage": {
+    "title": "关于我"
+  },
+  "AboutPageMetadata": {
+    "title": "关于我 | 马修 - Matthieu Daulhiac",
+    "description": "了解更多关于马修（Matthieu Daulhiac）的信息，他是一名热衷于网页开发和云技术的全栈工程师。",
+    "applicationName": "Matthieu Daulhiac的作品集",
+    "authorName": "Matthieu Daulhiac",
+    "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
+    "keywords": "Matthieu Daulhiac;全栈工程师;自由职业网页开发者;React;NextJS;NodeJS;作品集"
+  },
+  "ProjectsPage": {
+    "title": "我的项目"
+  },
+  "ProjectsPageMetadata": {
+    "title": "我的项目 | 马修 - Matthieu Daulhiac",
+    "description": "探索我参与的项目，展示我在 React、Node.js 和云技术方面的技能。",
+    "applicationName": "Matthieu Daulhiac的作品集",
+    "authorName": "Matthieu Daulhiac",
+    "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
+    "keywords": "Matthieu Daulhiac;全栈工程师;自由职业网页开发者;React;NextJS;NodeJS;作品集"
+  },
+  "ContactPage": {
+    "title": "联系我"
+  },
+  "ContactPageMetadata": {
+    "title": "联系我 | 马修 - Matthieu Daulhiac",
+    "description": "与马修（Matthieu Daulhiac）联系，讨论自由职业网页开发项目或合作机会。",
+    "applicationName": "Matthieu Daulhiac的作品集",
+    "authorName": "Matthieu Daulhiac",
+    "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
+    "keywords": "Matthieu Daulhiac;全栈工程师;自由职业网页开发者;React;NextJS;NodeJS;作品集"
   }
 }

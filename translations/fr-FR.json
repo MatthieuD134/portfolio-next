@@ -1,4 +1,17 @@
 {
+  "NotFound": {
+    "notFound": "Page non trouvée"
+  },
+  "Header": {
+    "title": "Matthieu Daulhiac | Ingénieur Full Stack",
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "HomePage": {
+    "title": "Bienvenue sur mon Portfolio"
+  },
   "Metadata": {
     "title": "Matthieu Daulhiac | Ingenieur Full Stack",
     "description": "Je suis Matthieu Daulhiac, un ingénieur Full Stack avec une expertise en React, Node.js et technologies cloud. Explorez mes projets et compétences.",
@@ -7,7 +20,37 @@
     "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
     "keywords": "Matthieu Daulhiac;Ingenieur Full Stack;Developpeur Web Freelance;React;NextJS;NodeJS;Portfolio"
   },
-  "LandingPage": {
-    "welcome": "Bienvenue dans notre application !"
+  "AboutPage": {
+    "title": "À propos de moi"
+  },
+  "AboutPageMetadata": {
+    "title": "À propos de moi | Matthieu Daulhiac",
+    "description": "En savoir plus sur Matthieu Daulhiac, un ingénieur Full Stack passionné par le développement web et les technologies cloud.",
+    "applicationName": "Portfolio de Matthieu Daulhiac",
+    "authorName": "Matthieu Daulhiac",
+    "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
+    "keywords": "Matthieu Daulhiac;Ingenieur Full Stack;Developpeur Web Freelance;React;NextJS;NodeJS;Portfolio"
+  },
+  "ProjectsPage": {
+    "title": "Mes Projets"
+  },
+  "ProjectsPageMetadata": {
+    "title": "Mes Projets | Matthieu Daulhiac",
+    "description": "Découvrez les projets sur lesquels j'ai travaillé, mettant en avant mes compétences en React, Node.js et technologies cloud.",
+    "applicationName": "Portfolio de Matthieu Daulhiac",
+    "authorName": "Matthieu Daulhiac",
+    "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
+    "keywords": "Matthieu Daulhiac;Ingenieur Full Stack;Developpeur Web Freelance;React;NextJS;NodeJS;Portfolio"
+  },
+  "ContactPage": {
+    "title": "Contactez-moi"
+  },
+  "ContactPageMetadata": {
+    "title": "Contactez-moi | Matthieu Daulhiac",
+    "description": "Prenez contact avec Matthieu Daulhiac pour des projets de développement web freelance ou des collaborations.",
+    "applicationName": "Portfolio de Matthieu Daulhiac",
+    "authorName": "Matthieu Daulhiac",
+    "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
+    "keywords": "Matthieu Daulhiac;Ingenieur Full Stack;Developpeur Web Freelance;React;NextJS;NodeJS;Portfolio"
   }
 }

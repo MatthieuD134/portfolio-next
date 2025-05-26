@@ -42,12 +42,14 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${shareTechSans.variable} ${shareTechMono.variable} antialiased`}>
+      <body
+        className={`${shareTechSans.variable} ${shareTechMono.variable} bg-background antialiased`}
+      >
         <NextIntlClientProvider>
           <div className="grid min-h-svh place-items-center p-2 md:p-8">
             <div className="flex h-full w-full flex-col items-center justify-center">
               <Header params={routeParams} />
-              <main className="h-full w-full max-w-[1200px] rounded-2xl border-2 p-2 font-sans">
+              <main className="border-foreground h-full w-full max-w-[1200px] border-2 border-t-0 p-2 font-sans">
                 {children}
               </main>
               <Footer params={routeParams} />
