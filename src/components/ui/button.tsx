@@ -10,7 +10,12 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: 'bg-transparent text-foreground/60 hover:text-foreground',
-        primary: 'bg-transparent text-primary/80 hover:text-primary',
+        primary:
+          'text-primary/80 hover:text-primary relative before:absolute before:top-0 before:bottom-0 before:left-0 before:w-2 before:border before:border-r-0 before:transition-all after:absolute after:top-0 after:right-0 after:bottom-0 after:w-2 after:border after:border-l-0 after:transition-all hover:before:translate-x-2 hover:after:-translate-x-2',
+        secondary:
+          'text-cyan-400/80 hover:text-cyan-400 relative before:absolute before:top-0 before:bottom-0 before:left-0 before:w-2 before:border before:border-r-0 before:transition-all after:absolute after:top-0 after:right-0 after:bottom-0 after:w-2 after:border after:border-l-0 after:transition-all hover:before:translate-x-2 hover:after:-translate-x-2',
+        foreground:
+          'text-foreground/80 hover:text-foreground relative before:absolute before:top-0 before:bottom-0 before:left-0 before:w-2 before:border before:border-r-0 before:transition-all after:absolute after:top-0 after:right-0 after:bottom-0 after:w-2 after:border after:border-l-0 after:transition-all hover:before:translate-x-2 hover:after:-translate-x-2',
         link: 'text-primary underline-offset-4 hover:underline',
       },
       size: {

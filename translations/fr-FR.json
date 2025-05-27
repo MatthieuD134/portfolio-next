@@ -10,16 +10,27 @@
     "contact": "Contact"
   },
   "HomePage": {
+    "systemOnline": "Système en ligne",
     "loadingProfile": "Chargement du profil de freelance . . .",
     "welcomeMessage": "Bienvenue sur mon Portfolio",
+    "intro": "Salut, moi c’est Matthieu — un développeur full-stack français passionné par le code propre et les interfaces bien pensées.",
     "name": "Nom",
     "nameValue": "Matthieu Daulhiac",
+    "role": "Rôle",
+    "roleValue": "Ingénieur Full Stack",
     "stack": "Technologies",
-    "stackValue": "Ingénieur Full Stack - React, NextJS, NodeJS, NestJS",
+    "stackValue": "React, NextJS, NodeJS, NestJS",
     "location": "Localisation",
-    "locationValue": "Shanghai - Disponible pour des projets à distance",
-    "status": "Statut",
-    "statusValue": "Disponible pour des projets freelance et des collaborations"
+    "locationValue": "Shanghai - Disponible pour des opportunités à distance",
+    "availability": "Disponibilité",
+    "availabilityValue": "Projets freelance à court terme et collaborations",
+    "languages": "Langues",
+    "languagesValue": "Anglais, Français, Chinois",
+    "logEntry01-A": "LOG 01-A: Frontend et backend synchronisés. Rien n'est laissé au hasard.",
+    "logEntry01-B": "LOG 01-B: Construit avec soin, sans raccourcis. Bugs évités avant même d’exister.",
+    "logEntry01-C": "LOG 01-C: Déploiement réussi. Rapide, stable, lisible. Comme il se doit.",
+    "resume": "Mon CV",
+    "exitingProcess": "Sortie du processus . . ."
   },
   "Metadata": {
     "title": "Matthieu Daulhiac | Ingenieur Full Stack",

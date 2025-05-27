@@ -10,16 +10,27 @@
     "contact": "联系"
   },
   "HomePage": {
+    "systemOnline": "系统在线",
     "loadingProfile": "加载自由职业者资料 . . .",
     "welcomeMessage": "欢迎来到我的作品集",
+    "intro": "嗨，我是 Matthieu, 一位热爱整洁代码和巧妙界面的法国全栈工程师。",
     "name": "姓名",
     "nameValue": "马修 - Matthieu Daulhiac",
+    "role": "职位",
+    "roleValue": "全栈工程师",
     "stack": "技术栈",
-    "stackValue": "全栈工程师 - React、NextJS、NodeJS、NestJS",
+    "stackValue": "React, NextJS, NodeJS, NestJS",
     "location": "位置",
     "locationValue": "上海 - 可远程工作",
-    "status": "状态",
-    "statusValue": "可接受自由职业项目和合作"
+    "availability": "状态",
+    "availabilityValue": "可接受短期自由职业项目和合作",
+    "languages": "语言",
+    "languagesValue": "英语，法语，中文",
+    "logEntry01-A": "LOG 01-A: 前后端已同步，无遗漏连接。",
+    "logEntry01-B": "LOG 01-B: 代码细致无捷径，问题在出现前已解决。",
+    "logEntry01-C": "LOG 01-C: 已部署。快速、可扩展、易读。正是如此应有的样子。",
+    "resume": "我的简历",
+    "exitingProcess": "退出进程 . . ."
   },
   "Metadata": {
     "title": "马修 - Matthieu Daulhiac | 全段开发工程师",

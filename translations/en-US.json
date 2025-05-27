@@ -10,16 +10,27 @@
     "contact": "Contact"
   },
   "HomePage": {
+    "systemOnline": "System online",
     "loadingProfile": "Loading freelancer profile . . .",
     "welcomeMessage": "Welcome to my Portfolio",
+    "intro": "Hey, I’m Matthieu — a French full-stack engineer who loves clean code and clever interfaces.",
     "name": "Name",
     "nameValue": "Matthieu Daulhiac",
-    "stack": "Stack",
-    "stackValue": "Full Stack Engineer - React, NextJS, NodeJS, NestJS",
+    "role": "Role",
+    "roleValue": "Full Stack Engineer",
+    "stack": "Tech Stack",
+    "stackValue": "React, NextJS, NodeJS, NestJS",
     "location": "Location",
-    "locationValue": "Shanghai - Available for remote projects",
-    "status": "Status",
-    "statusValue": "Available for freelance projects & collaborations"
+    "locationValue": "Shanghai - Available for remote opportunities",
+    "availability": "Availability",
+    "availabilityValue": "Short-term freelance projects and collaborations",
+    "languages": "Languages",
+    "languagesValue": "English, French, Chinese",
+    "logEntry01-A": "LOG 01-A: Frontend and backend synced. No loose wires.",
+    "logEntry01-B": "LOG 01-B: Built with care, not shortcuts. Debugged edge cases before they happened.",
+    "logEntry01-C": "LOG 02-C: Deployed. Fast, scalable, readable. Just how it should be.",
+    "resume": "My Resume",
+    "exitingProcess": "Exiting Process . . ."
   },
   "Metadata": {
     "title": "Matthieu Daulhiac | Full Stack Engineer",

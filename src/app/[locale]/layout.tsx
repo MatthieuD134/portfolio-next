@@ -46,10 +46,10 @@ export default async function LocaleLayout({
         className={`${shareTechSans.variable} ${shareTechMono.variable} bg-background antialiased`}
       >
         <NextIntlClientProvider>
-          <div className="grid min-h-svh place-items-center p-2 md:p-8">
-            <div className="flex h-full w-full flex-col items-center justify-center">
+          <div className="grid h-svh max-h-svh place-items-center">
+            <div className="flex h-svh w-full flex-col items-center justify-center p-2 md:p-8">
               <Header params={routeParams} />
-              <main className="border-foreground h-full w-full max-w-[1200px] overflow-scroll border-2 border-t-0 p-2 font-sans">
+              <main className="border-foreground h-full max-h-9/12 w-full max-w-[1200px] overflow-scroll border-2 border-t-0 p-2 font-sans">
                 {children}
               </main>
               <Footer params={routeParams} />

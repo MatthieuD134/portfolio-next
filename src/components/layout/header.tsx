@@ -28,16 +28,6 @@ export default async function Header({ params }: { params: { locale: string } })
             <NavButton
               className="border-foreground text-md after:bg-background relative border-b-2 px-5 before:absolute before:top-[50%] before:right-0 before:bottom-0 before:left-0 before:border-2 before:border-b-0 before:border-solid before:opacity-0 after:absolute after:inset-3 after:opacity-100 md:text-xl"
               activeClassName="border-b-0 text-foreground before:opacity-100"
-              href="/about"
-            >
-              <span className="z-10">{t('about')}</span>
-            </NavButton>
-          </li>
-          <span className="border-foreground w-full border-b-2" />
-          <li>
-            <NavButton
-              className="border-foreground text-md after:bg-background relative border-b-2 px-5 before:absolute before:top-[50%] before:right-0 before:bottom-0 before:left-0 before:border-2 before:border-b-0 before:border-solid before:opacity-0 after:absolute after:inset-3 after:opacity-100 md:text-xl"
-              activeClassName="border-b-0 text-foreground before:opacity-100"
               href="/projects"
             >
               <span className="z-10">{t('projects')}</span>
