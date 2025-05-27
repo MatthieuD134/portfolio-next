@@ -29,7 +29,7 @@ export default async function Projects({ params }: { params: Promise<{ locale: s
         </div>
       </div>
       <div className="flex flex-col items-start justify-center p-4">
-        <h2 className="mb-8 text-cyan-400">{t('title')}</h2>
+        <h2 className="mb-8 text-xl text-cyan-400">{t('title')}</h2>
         <ul className="flex w-full flex-col gap-2">
           {projects.map((project, index) => (
             <NavButton
