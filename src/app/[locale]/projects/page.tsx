@@ -5,37 +5,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { NavButton } from '@/components/ui/nav-button';
 import { Separator } from '@/components/ui/separator';
 
-type TProject = {
-  titleKey: string;
-  roleKey: string;
-  dateKey: string;
-  detailsKey: string;
-  href: string;
-};
-
-const projects: TProject[] = [
-  {
-    titleKey: 'b2bCommerce.title',
-    roleKey: 'b2bCommerce.role',
-    dateKey: 'b2bCommerce.date',
-    detailsKey: 'b2bCommerce.details',
-    href: '/projects/b2bCommerce',
-  },
-  {
-    titleKey: 'wrappedPunks.title',
-    roleKey: 'wrappedPunks.role',
-    dateKey: 'wrappedPunks.date',
-    detailsKey: 'wrappedPunks.details',
-    href: '/projects/wrappedPunks',
-  },
-  {
-    titleKey: 'ozu.title',
-    roleKey: 'ozu.role',
-    dateKey: 'ozu.date',
-    detailsKey: 'ozu.details',
-    href: '/projects/ozu',
-  },
-];
+import { projects } from './const';
 
 export default async function Projects({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -62,7 +32,12 @@ export default async function Projects({ params }: { params: Promise<{ locale: s
         <h2 className="mb-8 text-cyan-400">{t('title')}</h2>
         <ul className="flex w-full flex-col gap-2">
           {projects.map((project, index) => (
-            <NavButton key={index} href={project.href} variant="primary" className="h-fit">
+            <NavButton
+              key={index}
+              href={`projects/${project.projectId}`}
+              variant="primary"
+              className="h-fit"
+            >
               <li className="flex w-full flex-col gap-0">
                 <div className="flex justify-between">
                   <h3 className="text-md m-0">{t(project.titleKey)}</h3>

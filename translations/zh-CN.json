@@ -56,29 +56,92 @@
     "b2bCommerce": {
       "title": "On 的 B2B 平台",
       "role": "全栈工程师",
-      "date": "2024年1月 - 现在",
-      "details": "全职"
+      "dateName": "日期：",
+      "date": "2024年1月 - 至今",
+      "typeName": "类型：",
+      "type": "全职职位",
+      "locationName": "地点：",
+      "location": "上海 - 混合办公模式",
+      "visibilityName": "可见性：",
+      "visibility": "私有 - 内部使用",
+      "detailsName": "详情",
+      "stackName": "技术栈",
+      "stack": "React;NestJS;PostgreSQL;TypeORM;Docker;AWS;阿里云;REST API;Websockets",
+      "description": "我开发并维护了 On 的内部 B2B 商务平台，设计了可扩展的 NestJS API 和用于管理产品数据与用户的现代管理面板;我主导了关键重构，提升了测试覆盖率并优化了 CI/CD 流程;同时，我还提供了区域优化和季节性数据处理流程，支持全球产品发布。",
+      "link": "https://on.com",
+      "linkText": "访问 On 官网",
+      "backToProjects": "返回项目"
     },
     "wrappedPunks": {
       "title": "Wrapped Punks",
       "role": "前端重构",
+      "dateName": "日期：",
       "date": "2023年7月",
-      "details": "自由职业合同"
+      "typeName": "类型：",
+      "type": "自由职业合同",
+      "locationName": "地点：",
+      "location": "远程",
+      "detailsName": "详情",
+      "visibilityName": "可见性：",
+      "visibility": "公开",
+      "stackName": "技术栈",
+      "stack": "NextJS;TypeScript;ChakraUI;Solidity;Wagmi;Alchemy",
+      "description": "我对 Wrapped Punks 项目的前端进行了重构，提升了管理包装的 CryptoPunks NFTs 的效率和用户体验;通过遵循 React 与 TypeScript 的最佳实践，我改进了代码性能和可维护性。",
+      "link": "https://wrappedpunks.com",
+      "linkText": "访问 Wrapped Punks",
+      "backToProjects": "返回项目"
     },
     "ozu": {
       "title": "Ozu",
-      "role": "全栈工程师 & 区块链",
+      "role": "全栈 & 区块链工程师",
+      "dateName": "日期：",
       "date": "2022年9月 – 2023年10月",
-      "details": "自由职业合同"
+      "typeName": "类型：",
+      "type": "自由职业合同",
+      "locationName": "地点：",
+      "location": "远程",
+      "detailsName": "详情",
+      "visibilityName": "可见性：",
+      "visibility": "公开 - 暂未维护",
+      "stackName": "技术栈",
+      "stack": "NextJS;NestJS;Solidity;Hardhat;Typescript;PostgreSQL;Wagmi;Jotai",
+      "description": "我开发了一个基于 NextJS 的 Web 漫画平台，集成了 NFT 铸造、Metamask 钱包认证及创作者工具;我主导了区块链开发，使用 Solidity 与 Hardhat 设计并测试智能合约;我还参与了全栈开发，为读者、创作者和内部用户打造直观体验。",
+      "link": "https://ozu.io",
+      "linkText": "访问 Ozu",
+      "backToProjects": "返回项目"
     }
   },
   "ProjectsPageMetadata": {
-    "title": "我的项目 | 马修 - Matthieu Daulhiac",
-    "description": "探索我参与的项目，展示我在 React、Node.js 和云技术方面的技能。",
-    "applicationName": "Matthieu Daulhiac的作品集",
+    "title": "项目 | Matthieu Daulhiac",
+    "description": "探索我参与开发的项目，展示我在全栈开发、区块链和现代 Web 技术方面的技能。",
+    "applicationName": "Matthieu Daulhiac 的作品集",
     "authorName": "Matthieu Daulhiac",
     "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
-    "keywords": "Matthieu Daulhiac;全栈工程师;自由职业网页开发者;React;NextJS;NodeJS;作品集"
+    "keywords": "Matthieu Daulhiac, 全栈工程师, 区块链开发者, React, NextJS, NodeJS, NestJS, 作品集",
+    "b2bCommerce": {
+      "title": "On 的 B2B 平台 | Matthieu Daulhiac",
+      "description": "为 On 开发的内部 B2B 商务平台，具备可扩展 API、后台管理工具和针对中国市场的本地化优化。",
+      "applicationName": "Matthieu Daulhiac 的作品集",
+      "authorName": "Matthieu Daulhiac",
+      "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
+      "keywords": "B2B, On, 商务平台, NestJS, TypeScript, CI/CD, React, 中国, 内部工具"
+    },
+    "wrappedPunks": {
+      "title": "Wrapped Punks | Matthieu Daulhiac",
+      "description": "重构 Wrapped Punks 前端，提升用户体验和代码质量，用于管理包裹的 CryptoPunks NFT。",
+      "applicationName": "Matthieu Daulhiac 的作品集",
+      "authorName": "Matthieu Daulhiac",
+      "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
+      "keywords": "Wrapped Punks, CryptoPunks, NFTs, 前端, React, NextJS, TypeScript, 自由职业"
+    },
+    "ozu": {
+      "title": "Ozu | Matthieu Daulhiac",
+      "description": "一款结合 Web 漫画与 NFT 功能的平台，集成钱包验证和智能合约开发，由我全栈和链上实现。",
+      "applicationName": "Matthieu Daulhiac 的作品集",
+      "authorName": "Matthieu Daulhiac",
+      "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
+      "keywords": "Ozu, Web 漫画, 区块链, NFT, 智能合约, Solidity, Metamask, NextJS, 全栈开发"
+    }
   },
   "ContactPage": {
     "title": "联系我"

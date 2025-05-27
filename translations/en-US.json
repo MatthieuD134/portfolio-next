@@ -56,29 +56,92 @@
     "b2bCommerce": {
       "title": "B2B Platform for On",
       "role": "Full-Stack Engineer",
+      "dateName": "Date:",
       "date": "Jan 2024 - Present",
-      "details": "Full Time position"
+      "typeName": "Type:",
+      "type": "Full Time position",
+      "locationName": "Location:",
+      "location": "Shanghai - Hybrid work model",
+      "visibilityName": "Visibility:",
+      "visibility": "Private - Internal",
+      "detailsName": "Details",
+      "stackName": "Stack",
+      "stack": "React;NestJS;PostgreSQL;TypeORM;Docker;AWS;Alibaba Cloud;REST API;Websockets",
+      "description": "I built and maintained On’s internal B2B commerce platform, designing scalable NestJS APIs and a modern admin panel for managing product data and users.; I led key refactoring efforts, improved test coverage, and enhanced CI/CD pipelines.; I also delivered regional optimizations and seasonal data ingestion flows to support global product launches.",
+      "link": "https://on.com",
+      "linkText": "Visit On's website",
+      "backToProjects": "Back to Projects"
     },
     "wrappedPunks": {
       "title": "Wrapped Punks",
       "role": "Front-End Refactoring",
+      "dateName": "Date:",
       "date": "July 2023",
-      "details": "Freelance Contract"
+      "typeName": "Type:",
+      "type": "Freelance Contract",
+      "locationName": "Location:",
+      "location": "Remote",
+      "detailsName": "Details",
+      "visibilityName": "Visibility:",
+      "visibility": "Public",
+      "stackName": "Stack",
+      "stack": "NextJS;TypeScript;ChakraUI;Solidity;Wagmi;Alchemy",
+      "description": "I refactored the front-end of Wrapped Punks, a project focused on creating a more efficient and user-friendly interface for managing wrapped CryptoPunks NFTs.; I improved the codebase by implementing best practices in React and TypeScript, enhancing performance and maintainability.",
+      "link": "https://wrappedpunks.com",
+      "linkText": "Visit Wrapped Punks",
+      "backToProjects": "Back to Projects"
     },
     "ozu": {
       "title": "Ozu",
       "role": "Full-Stack & Blockchain Engineer",
+      "dateName": "Date:",
       "date": "Sep 2022 – Oct 2023",
-      "details": "Freelance Contract"
+      "typeName": "Type:",
+      "type": "Freelance Contract",
+      "locationName": "Location:",
+      "location": "Remote",
+      "detailsName": "Details",
+      "visibilityName": "Visibility:",
+      "visibility": "Public - Not maintained",
+      "stackName": "Stack",
+      "stack": "NextJS;NestJS;Solidity;Hardhat;Typescript;PostgreSQL;Wagmi;Jotai",
+      "description": "I built a webcomic platform using NextJS, integrating NFT minting, Metamask-based wallet authentication, and creator tools.;I led blockchain development, designing and testing smart contracts with Solidity and Hardhat.;I also contributed across the full stack to deliver an intuitive experience for readers, creators, and internal users.",
+      "link": "https://ozu.io",
+      "linkText": "Visit Ozu",
+      "backToProjects": "Back to Projects"
     }
   },
   "ProjectsPageMetadata": {
-    "title": "My Projects | Matthieu Daulhiac",
-    "description": "Explore the projects I have worked on, showcasing my skills in React, Node.js, and cloud technologies.",
-    "applicationName": "Matthieu Daulhiac's Portfolio",
+    "title": "Projects | Matthieu Daulhiac",
+    "description": "Discover a selection of my development projects, showcasing expertise in full-stack engineering, blockchain, and modern web technologies.",
+    "applicationName": "Matthieu Daulhiac Portfolio",
     "authorName": "Matthieu Daulhiac",
     "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
-    "keywords": "Matthieu Daulhiac;Full Stack Engineer;Freelance Web Developer;React;NextJS;NodeJS;Portfolio"
+    "keywords": "Matthieu Daulhiac, Full Stack Engineer, Blockchain Developer, React, NextJS, NodeJS, NestJS, Portfolio",
+    "b2bCommerce": {
+      "title": "B2B Platform for On | Matthieu Daulhiac",
+      "description": "Internal B2B commerce platform for On, featuring scalable APIs, admin tools, and localized optimizations for the Chinese market.",
+      "applicationName": "Matthieu Daulhiac Portfolio",
+      "authorName": "Matthieu Daulhiac",
+      "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
+      "keywords": "B2B, On, Commerce Platform, NestJS, TypeScript, CI/CD, React, China, Internal Tooling"
+    },
+    "wrappedPunks": {
+      "title": "Wrapped Punks | Matthieu Daulhiac",
+      "description": "Refactored front-end of Wrapped Punks, enhancing UX and code quality for managing wrapped CryptoPunks NFTs.",
+      "applicationName": "Matthieu Daulhiac Portfolio",
+      "authorName": "Matthieu Daulhiac",
+      "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
+      "keywords": "Wrapped Punks, CryptoPunks, NFTs, Front-End, React, NextJS, TypeScript, Freelance"
+    },
+    "ozu": {
+      "title": "Ozu | Matthieu Daulhiac",
+      "description": "Webcomic and NFT platform integrating wallet authentication and smart contract-based features, developed full-stack and on-chain.",
+      "applicationName": "Matthieu Daulhiac Portfolio",
+      "authorName": "Matthieu Daulhiac",
+      "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
+      "keywords": "Ozu, Webcomic, Blockchain, NFT, Smart Contracts, Solidity, Metamask, NextJS, Full Stack"
+    }
   },
   "ContactPage": {
     "title": "Contact Me"
