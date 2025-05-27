@@ -153,5 +153,19 @@
     "authorName": "Matthieu Daulhiac",
     "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
     "keywords": "Matthieu Daulhiac;全栈工程师;自由职业网页开发者;React;NextJS;NodeJS;作品集"
+  },
+  "ContactForm": {
+    "nameLabel": "姓名",
+    "namePlaceholder": "John Doe",
+    "nameError": "请输入至少 2 个字符的姓名",
+    "emailLabel": "电子邮件",
+    "emailPlaceholder": "john.doe@example.com",
+    "emailError": "请输入有效的电子邮件地址",
+    "messageLabel": "留言",
+    "messagePlaceholder": "您的留言...",
+    "messageError": "您的留言必须至少 10 个字符",
+    "submitButton": "发送留言",
+    "successMessage": "谢谢！您的留言已发送。",
+    "errorMessage": "哎呀！出现了问题。请再试一次。"
   }
 }

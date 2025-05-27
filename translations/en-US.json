@@ -153,5 +153,19 @@
     "authorName": "Matthieu Daulhiac",
     "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
     "keywords": "Matthieu Daulhiac;Full Stack Engineer;Freelance Web Developer;React;NextJS;NodeJS;Portfolio"
+  },
+  "ContactForm": {
+    "nameLabel": "Name",
+    "namePlaceholder": "John Doe",
+    "nameError": "Please enter a name with at least 2 characters",
+    "emailLabel": "Email",
+    "emailPlaceholder": "john.doe@example.com",
+    "emailError": "Please enter a valid email address",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Your message...",
+    "messageError": "Your message must be at least 10 characters long",
+    "submitButton": "Send Message",
+    "successMessage": "Thank you! Your message has been sent.",
+    "errorMessage": "Oops! Something went wrong. Please try again."
   }
 }

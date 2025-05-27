@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
+import { ContactForm } from '@/components/contact-form';
+
 export default async function Contact({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
@@ -13,7 +15,7 @@ export default async function Contact({ params }: { params: Promise<{ locale: st
   return (
     <div className="mx-auto grid max-w-[900px] grid-cols-1 md:h-full md:grid-cols-[2fr_3fr]">
       <div className="flex items-center justify-end">
-        <div className="relative h-full max-h-8/12 min-h-60 w-full max-w-full p-2 md:aspect-square md:w-auto">
+        <div className="relative h-full max-h-8/12 min-h-60 w-full max-w-full p-0 md:aspect-square md:w-auto md:p-4">
           <Image
             className="p-8 opacity-90 hue-rotate-[135deg] invert"
             src="/vault-boy-matthieu-contact.webp"
@@ -23,8 +25,9 @@ export default async function Contact({ params }: { params: Promise<{ locale: st
           />
         </div>
       </div>
-      <div className="flex flex-col items-start justify-center p-4">
+      <div className="flex flex-col items-start justify-center p-0 md:p-4">
         <h2 className="mb-8 text-xl text-cyan-400">{t('title')}</h2>
+        <ContactForm />
       </div>
     </div>
   );

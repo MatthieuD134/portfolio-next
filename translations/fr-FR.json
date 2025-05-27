@@ -153,5 +153,19 @@
     "authorName": "Matthieu Daulhiac",
     "authorUrl": "https://www.linkedin.com/in/matthieudaulhiac/",
     "keywords": "Matthieu Daulhiac;Ingenieur Full Stack;Developpeur Web Freelance;React;NextJS;NodeJS;Portfolio"
+  },
+  "ContactForm": {
+    "nameLabel": "Nom",
+    "namePlaceholder": "John Doe",
+    "nameError": "Veuillez entrer un nom d'au moins 2 caractères",
+    "emailLabel": "Email",
+    "emailPlaceholder": "john.doe@example.com",
+    "emailError": "Veuillez entrer une adresse email valide",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Votre message...",
+    "messageError": "Votre message doit comporter au moins 10 caractères",
+    "submitButton": "Envoyer le message",
+    "successMessage": "Merci ! Votre message a été envoyé.",
+    "errorMessage": "Oups ! Une erreur s'est produite. Veuillez réessayer."
   }
 }
