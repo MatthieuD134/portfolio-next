@@ -52,7 +52,25 @@
     "keywords": "Matthieu Daulhiac;Full Stack Engineer;Freelance Web Developer;React;NextJS;NodeJS;Portfolio"
   },
   "ProjectsPage": {
-    "title": "My Projects"
+    "title": "My Projects",
+    "b2bCommerce": {
+      "title": "B2B Platform for On",
+      "role": "Full-Stack Engineer",
+      "date": "Jan 2024 - Present",
+      "details": "Full Time position"
+    },
+    "wrappedPunks": {
+      "title": "Wrapped Punks",
+      "role": "Front-End Refactoring",
+      "date": "July 2023",
+      "details": "Freelance Contract"
+    },
+    "ozu": {
+      "title": "Ozu",
+      "role": "Full-Stack & Blockchain Engineer",
+      "date": "Sep 2022 – Oct 2023",
+      "details": "Freelance Contract"
+    }
   },
   "ProjectsPageMetadata": {
     "title": "My Projects | Matthieu Daulhiac",
