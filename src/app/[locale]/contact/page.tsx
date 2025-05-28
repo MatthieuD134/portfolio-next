@@ -19,8 +19,8 @@ export default async function Contact({ params }: { params: Promise<{ locale: st
       <div className="flex items-center justify-end">
         <div className="relative h-full max-h-8/12 min-h-60 w-full max-w-full p-0 md:aspect-square md:w-auto md:p-4">
           <Image
-            className="p-8 opacity-90 hue-rotate-[135deg] invert"
-            src="/vault-boy-matthieu-contact.webp"
+            className="p-8 opacity-90"
+            src="/vault-boy-matthieu-contact-white-fill.webp"
             alt="Illustration of Matthieu Daulhiac holding a phone in a vault-boy style"
             fill
             style={{ objectFit: 'contain' }}
@@ -33,14 +33,14 @@ export default async function Contact({ params }: { params: Promise<{ locale: st
         <ul className="relative mt-8 flex w-full justify-around border border-cyan-800 p-6 md:py-8">
           <h3 className="bg-background absolute -top-3 left-4 px-2 text-cyan-400">{t('findMe')}</h3>
           <li>
-            <Button variant="primary">
+            <Button variant="primary" asChild>
               <a href={SOCIAL_URLS.linkedIn} target="_blank" rel="noopener noreferrer">
                 {t('linkedIn')}
               </a>
             </Button>
           </li>
           <li>
-            <Button variant="primary">
+            <Button variant="primary" asChild>
               <a href={SOCIAL_URLS.github} target="_blank" rel="noopener noreferrer">
                 {t('github')}
               </a>

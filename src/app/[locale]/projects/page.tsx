@@ -20,8 +20,8 @@ export default async function Projects({ params }: { params: Promise<{ locale: s
       <div className="flex items-center justify-end">
         <div className="relative h-full max-h-8/12 min-h-60 w-full max-w-full p-2 md:aspect-square md:w-auto">
           <Image
-            className="p-8 opacity-90 hue-rotate-[135deg] invert"
-            src="/vault-boy-matthieu-coding.webp"
+            className="p-8 opacity-90"
+            src="/vault-boy-matthieu-coding-white.webp"
             alt="Illustration of Matthieu Daulhiac working on a computer in a vault-boy style"
             fill
             style={{ objectFit: 'contain' }}
