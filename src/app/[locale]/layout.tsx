@@ -8,6 +8,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import Footer from '@/components/layout/footer';
 import Header from '@/components/layout/header';
+import { Toaster } from '@/components/ui/sonner';
 import { routing } from '@/i18n/routing';
 
 const shareTechSans = Share_Tech({
@@ -55,6 +56,15 @@ export default async function LocaleLayout({
               <Footer params={routeParams} />
             </div>
           </div>
+          <Toaster
+            position="bottom-center"
+            toastOptions={{
+              classNames: {
+                toast: '!rounded-none !border-cyan-800 !text-cyan-400 !font-sans',
+                error: '!text-foreground !border-foreground/30',
+              },
+            }}
+          />
         </NextIntlClientProvider>
       </body>
     </html>

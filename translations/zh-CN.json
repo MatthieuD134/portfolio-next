@@ -144,7 +144,10 @@
     }
   },
   "ContactPage": {
-    "title": "联系我"
+    "title": "联系我",
+    "findMe": "或者在我的社交媒体上找到我",
+    "linkedIn": "LinkedIn",
+    "github": "GitHub"
   },
   "ContactPageMetadata": {
     "title": "联系我 | 马修 - Matthieu Daulhiac",

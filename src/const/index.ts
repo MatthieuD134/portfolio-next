@@ -7,3 +7,8 @@ export const localesEnum = {
 } as const;
 
 export type LocalesEnum = (typeof localesEnum)[keyof typeof localesEnum];
+
+export const SOCIAL_URLS = {
+  linkedIn: 'https://www.linkedin.com/in/matthieudaulhiac/',
+  github: 'https://github.com/MatthieuD134',
+};

@@ -144,7 +144,10 @@
     }
   },
   "ContactPage": {
-    "title": "Contactez-moi"
+    "title": "Contactez-moi",
+    "findMe": "Ou retrouvez-moi sur mes réseaux",
+    "linkedIn": "LinkedIn",
+    "github": "GitHub"
   },
   "ContactPageMetadata": {
     "title": "Contactez-moi | Matthieu Daulhiac",

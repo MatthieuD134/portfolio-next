@@ -1,8 +1,11 @@
 'use client';
 
+import emailjs from '@emailjs/browser';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useTranslations } from 'next-intl';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'sonner';
 import { z } from 'zod';
 
 import { Button } from '@/components/ui/button';
@@ -32,6 +35,7 @@ const formSchema = z.object({
 
 export function ContactForm() {
   const t = useTranslations('ContactForm');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
@@ -44,8 +48,26 @@ export function ContactForm() {
   });
 
   // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true);
+
+    const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '';
+    const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '';
+    const userID = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '';
+
+    try {
+      const res = await emailjs.send(serviceID, templateID, values, userID);
+
+      if (res.status === 200) {
+        toast.success(t('successMessage'));
+        form.reset();
+        console.log('OK');
+      }
+    } catch {
+      toast.error(<span className="rounded-0 border-primary">{t('errorMessage')}</span>);
+    }
+
+    setIsSubmitting(false);
   }
 
   // 3. Render the form.
@@ -101,7 +123,7 @@ export function ContactForm() {
               <FormControl>
                 <Textarea
                   placeholder={t('messagePlaceholder')}
-                  className="max-h-64 border-0 border-b border-cyan-800 px-0"
+                  className="max-h-40 border-0 border-b border-cyan-800 px-0"
                   {...field}
                 />
               </FormControl>
@@ -114,7 +136,7 @@ export function ContactForm() {
         />
 
         <div className="my-4 flex justify-center">
-          <Button type="submit" variant="primary">
+          <Button type="submit" variant="primary" disabled={isSubmitting}>
             {t('submitButton')}
           </Button>
         </div>
